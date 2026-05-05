@@ -1,55 +1,24 @@
-# Prerequisites
-*.d
+# --- DOOM SOURCE & BINARIES ---
+# We don't want to host the engine code, just our scripts
+src/
 
-# Object files
+# --- GAME DATA ---
+# WAD files are copyrighted; users must download their own (or use our script)
+wads/
+*.wad
+*.WAD
+
+# --- COMPILATION JUNK ---
+# These are generated during the 'make' process
 *.o
-*.ko
-*.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
 *.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
 *.so
-*.so.*
-*.dylib
+config.log
+config.status
+Makefile.in
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
-
-# debug information files
-*.dwo
+# --- TERMUX / SYSTEM ---
+# Ignore any hidden system files
+.DS_Store
+.thumbnails/
+node_modules/
